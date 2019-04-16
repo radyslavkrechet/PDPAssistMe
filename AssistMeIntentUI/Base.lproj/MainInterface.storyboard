@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="AssistMeIntentUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lea-fu-Xzu">
+                                <rect key="frame" x="20" y="230" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" highlightedImage="extreme" translatesAutoresizingMaskIntoConstraints="NO" id="dTu-A0-Jei">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="jxU-OP-AgP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhV-oe-6qk">
+                                <rect key="frame" x="20" y="254" width="280" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dTu-A0-Jei" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" id="4xT-mR-sxu"/>
+                            <constraint firstItem="lea-fu-Xzu" firstAttribute="top" secondItem="dTu-A0-Jei" secondAttribute="bottom" constant="30" id="CjL-LV-oHB"/>
+                            <constraint firstItem="dTu-A0-Jei" firstAttribute="trailing" secondItem="4PN-XC-lEE" secondAttribute="trailing" id="FtJ-WT-gHe"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" secondItem="GhV-oe-6qk" secondAttribute="trailing" constant="20" id="POt-5O-g6j"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" secondItem="lea-fu-Xzu" secondAttribute="trailing" constant="20" id="Ucf-Uv-8zQ"/>
+                            <constraint firstItem="dTu-A0-Jei" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="V29-yS-6mr"/>
+                            <constraint firstItem="lea-fu-Xzu" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" constant="20" id="VxE-HU-rWQ"/>
+                            <constraint firstItem="GhV-oe-6qk" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" constant="20" id="bSg-6X-16A"/>
+                            <constraint firstItem="GhV-oe-6qk" firstAttribute="top" secondItem="lea-fu-Xzu" secondAttribute="bottom" constant="3" id="lYN-Mj-Ahv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                    <connections>
+                        <outlet property="detailTextLabel" destination="GhV-oe-6qk" id="nGK-Lq-sv1"/>
+                        <outlet property="imageView" destination="dTu-A0-Jei" id="IRz-iO-mAh"/>
+                        <outlet property="textLabel" destination="lea-fu-Xzu" id="HeL-6B-6Cc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207.24637681159422" y="108.48214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="extreme" width="183.33332824707031" height="166.66667175292969"/>
+    </resources>
+</document>
